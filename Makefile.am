@@ -1,5 +1,8 @@
-EXTRA_DIST=autogen.sh  TODO
-dictdata_DATA = etlex.dict.dz telex.dict.dz
+EXTRA_DIST=autogen.sh  TODO \
+        etlex.dict.dz telex.dict.dz etlex.index telex.index \
+        LICENSE LICENSE-th lexitron.info
+
+dictdata_DATA = etlex.dict.dz telex.dict.dz etlex.index telex.index
 
 etlex.c5: etlex.utf-8
 	${PERL} parse_etlex.pl etlex.utf-8 > etlex.c5 2>/dev/null
