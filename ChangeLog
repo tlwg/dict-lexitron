@@ -1,2 +1,19 @@
-2004-06-19 Vee Satayamas <vee@linux.thai.net>
-    * configure.ac, Makefile.am, autogen.sh: Add Autoconf/Automake support
+2006-10-13  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
+	* configure.in: Remove unneeded libtool call. Remove some unused codes.
+
+	* autogen.sh: Replace with simpler version.
+
+	* +NEWS: Add empty file to make automake happy.
+
+	* Makefile.am:
+	  - Don't include generated files in EXTRA_DIST.
+	  - Add scripts and sources required for building to EXTRA_DIST.
+	  - Use $(srcdir) when refering to sources, to allow non-source-dir
+	    build.
+	  - Use --utf8 instead of --locale th_TH.UTF-8 for dictfmt.
+	  - Also remove *.index in clean-generic.
+
+2004-06-19  Vee Satayamas  <vee@linux.thai.net>
+
+	* configure.in, Makefile.am, autogen.sh: Add Autoconf/Automake support
