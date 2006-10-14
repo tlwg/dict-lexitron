@@ -65,6 +65,7 @@ binary-indep: build install
 	dh_testroot
 	dh_installchangelogs ChangeLog
 	dh_installdocs
+	dh_install --sourcedir=debian/dictd-lexitron
 	dh_link
 	dh_compress
 	dh_fixperms
