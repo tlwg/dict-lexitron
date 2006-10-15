@@ -2,7 +2,7 @@
 # parse_telex.pl: prepare data for creating dictionary database
 # usage: ./parse_telex.pl telex.utf-8 > telex.c5
 # by Poonlap Veerathanabutr <poonlap@linux.thai.net>
-# $Id: parse_telex.pl,v 1.1 2004-06-17 16:44:35 poonlap Exp $
+# $Id: parse_telex.pl,v 1.2 2006-10-15 11:27:25 thep Exp $
 
 
 use strict;
@@ -57,7 +57,7 @@ sub End_handler {
 	    print "\tSample: $record{'tsample'}\n\n";
 	}
 	if( defined $record{'tant'} ){
-	    print "\tanonym: $record{'tant'}\n";
+	    print "\tantonym: $record{'tant'}\n";
 	}
 	if( defined $record{'tsyn'} ){
 	    print "\tsynonym: $record{'tsyn'}\n";

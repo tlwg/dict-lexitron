@@ -2,7 +2,7 @@
 # parse_etlex.pl: prepare data for creating dictionary database
 # usage: ./parse_etlex.pl etlex.utf-8 > etlex.c5
 # by Poonlap Veerathanabutr <poonlap@linux.thai.net>
-# $Id: parse_etlex.pl,v 1.1 2004-06-17 16:44:35 poonlap Exp $
+# $Id: parse_etlex.pl,v 1.2 2006-10-15 11:27:25 thep Exp $
 
 
 use strict;
@@ -51,7 +51,7 @@ sub End_handler {
 	    print "\t$record{'ethai'}\n\n";
 	}
 	if( defined $record{'eant'} ){
-	    print "\tanonym: $record{'eant'}\n";
+	    print "\tantonym: $record{'eant'}\n";
 	}
 	if( defined $record{'esyn'} ){
 	    print "\tsynonym: $record{'esyn'}\n";
