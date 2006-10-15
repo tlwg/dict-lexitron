@@ -2,7 +2,7 @@
 # parse_telex.pl: prepare data for creating dictionary database
 # usage: ./parse_telex.pl telex.utf-8 > telex.c5
 # by Poonlap Veerathanabutr <poonlap@linux.thai.net>
-# $Id: parse_telex.pl,v 1.2 2006-10-15 11:27:25 thep Exp $
+# $Id: parse_telex.pl,v 1.3 2006-10-15 12:26:22 thep Exp $
 
 
 use strict;
@@ -48,7 +48,7 @@ sub End_handler {
 	    print "\t$record{'tenglish'}\n\n";
 	}
 	if( defined $record{'tnum'} ){
-	    print "[\t$record{'tnum'}]\n";
+	    print "[$record{'tnum'}]\n";
 	}
 	if( defined $record{'tdef'} ){
 	    print "\t$record{'tdef'}\n\n";

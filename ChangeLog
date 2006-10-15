@@ -1,5 +1,9 @@
 2006-10-15  Theppitak Karoonboonyanan  <thep@linux.thai.net>
 
+	* parse_telex.pl (End_handler): Remove leading space for <tnum>.
+
+2006-10-15  Theppitak Karoonboonyanan  <thep@linux.thai.net>
+
 	* parse_telex.pl (End_handler), parse_etlex.pl (End_handler):
 	Fix typo 'anonym' -> 'antonym'.
 
