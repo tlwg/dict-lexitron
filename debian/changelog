@@ -1,4 +1,19 @@
-dictd-lexitron (20061014-1) unstable; urgency=low
+dictd-lexitron (0.0.20061014-2) unstable; urgency=low
+
+  * Remove build stuffs for platform-dependent materials:
+    - debian/control: Drop build-dep on autotools-dev.
+    - debian/rules:
+      + Remove config.{guess,sub} substitution.
+      + Do not pass --build and --host configure arguments.
+  * debian/copyright: Rewrite in machine-interpretable format.
+  * debian/rules: Do not ignore 'make disclean' errors.
+  * debian/post{inst,rm}: Check for invoke-rc.d before calling.
+  * debian/dirs: Remove, unneeded.
+  * Bump Standards-Version to 3.7.3, no additional changes needed.
+
+ -- Theppitak Karoonboonyanan <thep@linux.thai.net>  Wed, 09 Apr 2008 13:28:08 +0700
+
+dictd-lexitron (0.0.20061014-1) unstable; urgency=low
 
   * Initial release.
 
